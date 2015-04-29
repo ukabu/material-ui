@@ -177,7 +177,7 @@ var AppBar = React.createClass({displayName: "AppBar",
 module.exports = AppBar;
 
 }).call(this,require('_process'))
-},{"./icon-button":23,"./mixins/style-propable":32,"./paper":35,"./styles/typography":51,"./svg-icons/navigation-menu":56,"_process":83,"react":undefined}],2:[function(require,module,exports){
+},{"./icon-button":23,"./mixins/style-propable":32,"./paper":35,"./styles/typography":51,"./svg-icons/navigation-menu":56,"_process":93,"react":undefined}],2:[function(require,module,exports){
 var React = require('react');
 
 var AppCanvas = React.createClass({displayName: "AppCanvas",
@@ -583,7 +583,7 @@ var CalendarMonth = React.createClass({displayName: "CalendarMonth",
 });
 
 module.exports = CalendarMonth;
-},{"../clearfix":5,"../mixins/style-propable":32,"../styles/colors":45,"../utils/date-time":75,"./day-button":12,"react":undefined}],7:[function(require,module,exports){
+},{"../clearfix":5,"../mixins/style-propable":32,"../styles/colors":45,"../utils/date-time":85,"./day-button":12,"react":undefined}],7:[function(require,module,exports){
 var React = require('react');
 var DateTime = require('../utils/date-time');
 var IconButton = require('../icon-button');
@@ -710,7 +710,7 @@ var CalendarToolbar = React.createClass({displayName: "CalendarToolbar",
 
 module.exports = CalendarToolbar;
 
-},{"../icon-button":23,"../svg-icons/navigation-chevron-left":54,"../svg-icons/navigation-chevron-right":55,"../transition-groups/slide-in":72,"../utils/date-time":75,"react":undefined}],8:[function(require,module,exports){
+},{"../icon-button":23,"../svg-icons/navigation-chevron-left":54,"../svg-icons/navigation-chevron-right":55,"../transition-groups/slide-in":82,"../utils/date-time":85,"react":undefined}],8:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var WindowListenable = require('../mixins/window-listenable');
@@ -948,7 +948,7 @@ var Calendar = React.createClass({displayName: "Calendar",
 });
 
 module.exports = Calendar;
-},{"../clearfix":5,"../mixins/style-propable":32,"../mixins/window-listenable":33,"../styles/transitions":50,"../transition-groups/slide-in":72,"../utils/date-time":75,"../utils/key-code":79,"./calendar-month":6,"./calendar-toolbar":7,"./date-display":9,"react":undefined}],9:[function(require,module,exports){
+},{"../clearfix":5,"../mixins/style-propable":32,"../mixins/window-listenable":33,"../styles/transitions":50,"../transition-groups/slide-in":82,"../utils/date-time":85,"../utils/key-code":89,"./calendar-month":6,"./calendar-toolbar":7,"./date-display":9,"react":undefined}],9:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var DateTime = require('../utils/date-time');
@@ -1131,7 +1131,7 @@ var DateDisplay = React.createClass({displayName: "DateDisplay",
 });
 
 module.exports = DateDisplay;
-},{"../mixins/style-propable":32,"../styles/auto-prefix":44,"../styles/transitions":50,"../transition-groups/slide-in":72,"../utils/date-time":75,"react":undefined}],10:[function(require,module,exports){
+},{"../mixins/style-propable":32,"../styles/auto-prefix":44,"../styles/transitions":50,"../transition-groups/slide-in":82,"../utils/date-time":85,"react":undefined}],10:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var WindowListenable = require('../mixins/window-listenable');
@@ -1289,7 +1289,7 @@ var DatePickerDialog = React.createClass({displayName: "DatePickerDialog",
 
 module.exports = DatePickerDialog;
 
-},{"../dialog-window":13,"../flat-button":20,"../mixins/style-propable":32,"../mixins/window-listenable":33,"../utils/key-code":79,"./calendar":8,"react":undefined}],11:[function(require,module,exports){
+},{"../dialog-window":13,"../flat-button":20,"../mixins/style-propable":32,"../mixins/window-listenable":33,"../utils/key-code":89,"./calendar":8,"react":undefined}],11:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var WindowListenable = require('../mixins/window-listenable');
@@ -1416,7 +1416,7 @@ var DatePicker = React.createClass({displayName: "DatePicker",
 
 module.exports = DatePicker;
 
-},{"../mixins/style-propable":32,"../mixins/window-listenable":33,"../text-field":64,"../utils/date-time":75,"../utils/key-code":79,"./date-picker-dialog":10,"react":undefined}],12:[function(require,module,exports){
+},{"../mixins/style-propable":32,"../mixins/window-listenable":33,"../text-field":64,"../utils/date-time":85,"../utils/key-code":89,"./date-picker-dialog":10,"react":undefined}],12:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var Transition = require('../styles/transitions');
@@ -1513,7 +1513,7 @@ var DayButton = React.createClass({displayName: "DayButton",
 });
 
 module.exports = DayButton;
-},{"../enhanced-button":17,"../mixins/style-propable":32,"../styles/transitions":50,"../utils/date-time":75,"react":undefined}],13:[function(require,module,exports){
+},{"../enhanced-button":17,"../mixins/style-propable":32,"../styles/transitions":50,"../utils/date-time":85,"react":undefined}],13:[function(require,module,exports){
 var React = require('react');
 var WindowListenable = require('./mixins/window-listenable');
 var CssEvent = require('./utils/css-event');
@@ -1768,7 +1768,7 @@ var DialogWindow = React.createClass({displayName: "DialogWindow",
 
 module.exports = DialogWindow;
 
-},{"./flat-button":20,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./overlay":34,"./paper":35,"./styles/transitions":50,"./utils/css-event":74,"./utils/key-code":79,"react":undefined}],14:[function(require,module,exports){
+},{"./flat-button":20,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./overlay":34,"./paper":35,"./styles/transitions":50,"./utils/css-event":84,"./utils/key-code":89,"react":undefined}],14:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Spacing = require('./styles/spacing');
@@ -1959,7 +1959,7 @@ var DropDownIcon = React.createClass({displayName: "DropDownIcon",
 
 module.exports = DropDownIcon;
 
-},{"./font-icon":22,"./menu/menu":28,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./paper":35,"./styles/spacing":46,"./styles/transitions":50,"./utils/key-line":80,"react":undefined}],16:[function(require,module,exports){
+},{"./font-icon":22,"./menu/menu":28,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./paper":35,"./styles/spacing":46,"./styles/transitions":50,"./utils/key-line":90,"react":undefined}],16:[function(require,module,exports){
 (function (process){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
@@ -2165,7 +2165,7 @@ var DropDownMenu = React.createClass({displayName: "DropDownMenu",
 
 module.exports = DropDownMenu;
 }).call(this,require('_process'))
-},{"./clearfix":5,"./menu/menu":28,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./svg-icons/drop-down-arrow":53,"./utils/key-line":80,"_process":83,"react":undefined}],17:[function(require,module,exports){
+},{"./clearfix":5,"./menu/menu":28,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./svg-icons/drop-down-arrow":53,"./utils/key-line":90,"_process":93,"react":undefined}],17:[function(require,module,exports){
 var React = require('react');
 var KeyCode = require('./utils/key-code');
 var StylePropable = require('./mixins/style-propable');
@@ -2401,7 +2401,7 @@ EnhancedButton.hasStyleBeenInjected = false;
 
 module.exports = EnhancedButton;
 
-},{"./mixins/style-propable":32,"./mixins/window-listenable":33,"./ripples/focus-ripple":40,"./ripples/touch-ripple":41,"./utils/key-code":79,"react":undefined}],18:[function(require,module,exports){
+},{"./mixins/style-propable":32,"./mixins/window-listenable":33,"./ripples/focus-ripple":40,"./ripples/touch-ripple":41,"./utils/key-code":89,"react":undefined}],18:[function(require,module,exports){
 (function (process){
 var React = require('react');
 var KeyCode = require('./utils/key-code');
@@ -2803,7 +2803,7 @@ var EnhancedSwitch = React.createClass({displayName: "EnhancedSwitch",
 module.exports = EnhancedSwitch;
 
 }).call(this,require('_process'))
-},{"./mixins/style-propable":32,"./mixins/window-listenable":33,"./paper":35,"./ripples/focus-ripple":40,"./ripples/touch-ripple":41,"./styles/spacing":46,"./styles/transitions":50,"./utils/key-code":79,"./utils/unique-id":82,"_process":83,"react":undefined}],19:[function(require,module,exports){
+},{"./mixins/style-propable":32,"./mixins/window-listenable":33,"./paper":35,"./ripples/focus-ripple":40,"./ripples/touch-ripple":41,"./styles/spacing":46,"./styles/transitions":50,"./utils/key-code":89,"./utils/unique-id":92,"_process":93,"react":undefined}],19:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var AutoPrefix = require('./styles/auto-prefix');
@@ -3102,7 +3102,7 @@ var FlatButton = React.createClass({displayName: "FlatButton",
 
 module.exports = FlatButton;
 
-},{"./enhanced-button":17,"./mixins/style-propable":32,"./styles/transitions":50,"./styles/typography":51,"./utils/color-manipulator":73,"react":undefined}],21:[function(require,module,exports){
+},{"./enhanced-button":17,"./mixins/style-propable":32,"./styles/transitions":50,"./styles/typography":51,"./utils/color-manipulator":83,"react":undefined}],21:[function(require,module,exports){
 (function (process){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
@@ -3345,7 +3345,7 @@ var RaisedButton = React.createClass({displayName: "RaisedButton",
 module.exports = RaisedButton;
 
 }).call(this,require('_process'))
-},{"./enhanced-button":17,"./font-icon":22,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./utils/color-manipulator":73,"_process":83,"react":undefined}],22:[function(require,module,exports){
+},{"./enhanced-button":17,"./font-icon":22,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./utils/color-manipulator":83,"_process":93,"react":undefined}],22:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Spacing = require('./styles/spacing');
@@ -3611,7 +3611,7 @@ var IconButton = React.createClass({displayName: "IconButton",
 module.exports = IconButton;
 
 }).call(this,require('_process'))
-},{"./enhanced-button":17,"./font-icon":22,"./mixins/style-propable":32,"./styles/transitions":50,"./tooltip":70,"_process":83,"react":undefined}],24:[function(require,module,exports){
+},{"./enhanced-button":17,"./font-icon":22,"./mixins/style-propable":32,"./styles/transitions":50,"./tooltip":80,"_process":93,"react":undefined}],24:[function(require,module,exports){
 var React = require('react');
 var Transitions = require('./styles/transitions');
 var StylePropable = require('./mixins/style-propable');
@@ -3846,7 +3846,7 @@ var LeftNav = React.createClass({displayName: "LeftNav",
 
 module.exports = LeftNav;
 
-},{"./menu/menu":28,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./overlay":34,"./paper":35,"./styles/transitions":50,"./utils/key-code":79,"react":undefined}],26:[function(require,module,exports){
+},{"./menu/menu":28,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./overlay":34,"./paper":35,"./styles/transitions":50,"./utils/key-code":89,"react":undefined}],26:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 
@@ -4158,7 +4158,7 @@ var MenuItem = React.createClass({displayName: "MenuItem",
 
 module.exports = MenuItem;
 
-},{"../font-icon":22,"../mixins/style-propable":32,"../toggle":65,"react":undefined}],28:[function(require,module,exports){
+},{"../font-icon":22,"../mixins/style-propable":32,"../toggle":75,"react":undefined}],28:[function(require,module,exports){
 var React = require('react');
 var CssEvent = require('../utils/css-event');
 var Dom = require('../utils/dom');
@@ -4587,7 +4587,7 @@ var Menu = React.createClass({displayName: "Menu",
 
 module.exports = Menu;
 
-},{"../mixins/click-awayable":31,"../mixins/style-propable":32,"../paper":35,"../styles/transitions":50,"../utils/css-event":74,"../utils/dom":76,"../utils/key-line":80,"./link-menu-item":26,"./menu-item":27,"./subheader-menu-item":29,"react":undefined}],29:[function(require,module,exports){
+},{"../mixins/click-awayable":31,"../mixins/style-propable":32,"../paper":35,"../styles/transitions":50,"../utils/css-event":84,"../utils/dom":86,"../utils/key-line":90,"./link-menu-item":26,"./menu-item":27,"./subheader-menu-item":29,"react":undefined}],29:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var Typography = require('../styles/typography');
@@ -4711,7 +4711,7 @@ module.exports = {
 
 }
 
-},{"classnames":84,"react":undefined}],31:[function(require,module,exports){
+},{"classnames":94,"react":undefined}],31:[function(require,module,exports){
 var React = require('react');
 var Events = require('../utils/events');
 var Dom = require('../utils/dom');
@@ -4751,7 +4751,7 @@ module.exports = {
 
 };
 
-},{"../utils/dom":76,"../utils/events":77,"react":undefined}],32:[function(require,module,exports){
+},{"../utils/dom":86,"../utils/events":87,"react":undefined}],32:[function(require,module,exports){
 var React = require('react/addons');
 var AutoPrefix = require('../styles/auto-prefix');
 var Extend = require('../utils/extend');
@@ -4796,7 +4796,7 @@ module.exports = {
 	},
 }
 
-},{"../styles/auto-prefix":44,"../utils/extend":78,"react/addons":undefined}],33:[function(require,module,exports){
+},{"../styles/auto-prefix":44,"../utils/extend":88,"react/addons":undefined}],33:[function(require,module,exports){
 var Events = require('../utils/events');
 
 module.exports = {
@@ -4820,7 +4820,7 @@ module.exports = {
   }
   
 }
-},{"../utils/events":77}],34:[function(require,module,exports){
+},{"../utils/events":87}],34:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Transitions = require('./styles/transitions');
@@ -5137,7 +5137,7 @@ var RadioButtonGroup = React.createClass({displayName: "RadioButtonGroup",
 module.exports = RadioButtonGroup;
 
 }).call(this,require('_process'))
-},{"./enhanced-switch":18,"./paper":35,"./radio-button":37,"_process":83,"react":undefined}],37:[function(require,module,exports){
+},{"./enhanced-switch":18,"./paper":35,"./radio-button":37,"_process":93,"react":undefined}],37:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Transitions = require('./styles/transitions');
@@ -5496,7 +5496,7 @@ var RaisedButton = React.createClass({displayName: "RaisedButton",
 });
 
 module.exports = RaisedButton;
-},{"./enhanced-button":17,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./styles/typography":51,"./utils/color-manipulator":73,"react":undefined}],39:[function(require,module,exports){
+},{"./enhanced-button":17,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"./styles/typography":51,"./utils/color-manipulator":83,"react":undefined}],39:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 var Transitions = require('../styles/transitions');
@@ -5836,7 +5836,7 @@ var TouchRipple = React.createClass({displayName: "TouchRipple",
 
 module.exports = TouchRipple;
 
-},{"../mixins/style-propable":32,"../utils/dom":76,"./circle":39,"react":undefined}],42:[function(require,module,exports){
+},{"../mixins/style-propable":32,"../utils/dom":86,"./circle":39,"react":undefined}],42:[function(require,module,exports){
 var React = require('react');
 var Paper = require('./paper');
 var StylePropable = require('./mixins/style-propable');
@@ -6214,7 +6214,7 @@ var Slider = React.createClass({displayName: "Slider",
 
 module.exports = Slider;
 
-},{"./mixins/style-propable":32,"./paper":35,"./ripples/focus-ripple":40,"./styles/transitions.js":50,"react":undefined,"react-draggable2":85}],43:[function(require,module,exports){
+},{"./mixins/style-propable":32,"./paper":35,"./ripples/focus-ripple":40,"./styles/transitions.js":50,"react":undefined,"react-draggable2":95}],43:[function(require,module,exports){
 var React = require('react');
 var CssEvent = require('./utils/css-event');
 var StylePropable = require('./mixins/style-propable');
@@ -6352,8 +6352,9 @@ var Snackbar = React.createClass({displayName: "Snackbar",
 });
 
 module.exports = Snackbar;
-},{"./flat-button":20,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./styles/transitions":50,"./utils/css-event":74,"react":undefined}],44:[function(require,module,exports){
-var Modernizr = require('../utils/modernizr.custom');
+},{"./flat-button":20,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./styles/transitions":50,"./utils/css-event":84,"react":undefined}],44:[function(require,module,exports){
+var isBrowser = typeof window !== 'undefined' ? true : false;
+var Modernizr = isBrowser ? require('../utils/modernizr.custom') : undefined;
 
 module.exports = {
 
@@ -6370,19 +6371,20 @@ module.exports = {
   },
 
   single: function(key) {
-    return Modernizr.prefixed(key);
+    return isBrowser ? Modernizr.prefixed(key) : key;
   },
 
   singleHyphened: function(key) {
     var str = this.single(key);
 
-    return str.replace(/([A-Z])/g, function(str,m1){ 
+    return !str ? key : str.replace(/([A-Z])/g, function(str,m1){
       return '-' + m1.toLowerCase();
     }).replace(/^ms-/,'-ms-');
   }
 
-}
-},{"../utils/modernizr.custom":81}],45:[function(require,module,exports){
+};
+
+},{"../utils/modernizr.custom":91}],45:[function(require,module,exports){
 // To include this file in your project:
 // var mui = require('mui');
 // var Colors = mui.Styles.Colors;
@@ -6740,7 +6742,7 @@ var ThemeManager = function() {
 };
 
 module.exports = ThemeManager;
-},{"../utils/color-manipulator":73,"../utils/extend":78,"./colors":45,"./spacing":46,"./themes/dark-theme":48,"./themes/light-theme":49}],48:[function(require,module,exports){
+},{"../utils/color-manipulator":83,"../utils/extend":88,"./colors":45,"./spacing":46,"./themes/dark-theme":48,"./themes/light-theme":49}],48:[function(require,module,exports){
 var Colors = require('../colors');
 var ColorManipulator = require('../../utils/color-manipulator');
 
@@ -6798,7 +6800,7 @@ var DarkTheme = {
 };
 
 module.exports = DarkTheme;
-},{"../../utils/color-manipulator":73,"../colors":45}],49:[function(require,module,exports){
+},{"../../utils/color-manipulator":83,"../colors":45}],49:[function(require,module,exports){
 var Colors = require('../colors');
 var Spacing = require('../spacing');
 var ColorManipulator = require('../../utils/color-manipulator');
@@ -6923,6 +6925,14 @@ var LightTheme = {
         backgroundColor: '#323232',
         actionColor: palette.accent1Color
       },
+      timePicker: {
+        color: Colors.white,
+        textColor: Colors.grey600,
+        accentColor: palette.primary1Color,
+        clockColor: Colors.black,
+        selectColor: palette.primary2Color,
+        selectTextColor: Colors.white
+      },
       toggle: {
         thumbOnColor: palette.primary1Color,
         thumbOffColor: Colors.grey50,
@@ -6957,7 +6967,7 @@ var LightTheme = {
 }
 
 module.exports = LightTheme;
-},{"../../utils/color-manipulator":73,"../colors":45,"../spacing":46}],50:[function(require,module,exports){
+},{"../../utils/color-manipulator":83,"../colors":45,"../spacing":46}],50:[function(require,module,exports){
 var AutoPrefix = require('./auto-prefix');
 
 module.exports = {
@@ -7733,7 +7743,1251 @@ var TextField = React.createClass({displayName: "TextField",
 module.exports = TextField;
 
 }).call(this,require('_process'))
-},{"./enhanced-textarea":19,"./mixins/style-propable":32,"./styles/colors":45,"./styles/transitions":50,"./utils/color-manipulator":73,"./utils/unique-id":82,"_process":83,"react":undefined}],65:[function(require,module,exports){
+},{"./enhanced-textarea":19,"./mixins/style-propable":32,"./styles/colors":45,"./styles/transitions":50,"./utils/color-manipulator":83,"./utils/unique-id":92,"_process":93,"react":undefined}],65:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+var EnhancedButton = require('../enhanced-button');
+var Transitions = require('../styles/transitions');
+
+var ClockButton = React.createClass({displayName: "ClockButton",
+
+  mixins: [StylePropable],
+
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+
+  propTypes: {
+      position: React.PropTypes.oneOf(['left', 'right'])
+  },
+  
+  getDefaultProps: function () {
+      return {
+          position: "left"  
+      };
+  },
+  _handleTouchTap: function(){
+    
+    this.setState({
+      selected: true
+    })
+    this.props.onTouchTap();
+  },
+  getTheme: function() {
+    return this.context.theme.component.timePicker;
+  },
+  render: function() {
+    
+    var $__0=
+      
+        this.props,className=$__0.className,other=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{className:1});
+    
+    var styles = {
+      root: {
+        position: "absolute",
+        bottom: "65px",
+        pointerEvents: "auto",
+        height: "50px", 
+        width: "50px",
+        borderRadius: "100%"
+      },
+
+      label : {
+        position: "absolute",
+        top: "17px",
+        left: "14px"
+      },
+
+      select: {
+        position: 'absolute',
+        height: 50,
+        width: 50,
+        top: "0px",
+        left: "0px",
+        opacity: 0,
+        borderRadius: '50%',
+        transform: 'scale(0)',
+        transition: Transitions.easeOut(),
+        backgroundColor: this.getTheme().accentColor,
+      },
+    };
+
+    if (this.props.selected) {
+      styles.label.color = this.getTheme().selectTextColor;
+      styles.select.opacity = 1;
+      styles.select.transform = 'scale(1)';
+    }
+
+    if( this.props.position == "right" ){
+      styles.root.right = "5px";
+    }else{
+      styles.root.left = "5px";
+    }
+      
+
+
+    return (
+        React.createElement(EnhancedButton, React.__spread({},  other, 
+          {style: this.mergeAndPrefix(styles.root), 
+          disableFocusRipple: true, 
+          disableTouchRipple: true, 
+          onTouchTap: this._handleTouchTap}), 
+          React.createElement("span", {style: this.mergeAndPrefix(styles.select)}), 
+          React.createElement("span", {style: this.mergeAndPrefix(styles.label)}, this.props.children)
+        ) 
+    );
+  }
+});
+
+module.exports = ClockButton;
+},{"../enhanced-button":17,"../mixins/style-propable":32,"../styles/transitions":50,"react":undefined}],66:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+var ClockNumber = require("./clock-number");
+var ClockPointer = require("./clock-pointer");
+
+function rad2deg(rad){
+  return rad * 57.29577951308232
+}
+
+var ClockHours = React.createClass({displayName: "ClockHours",
+
+  mixins: [StylePropable],
+
+  propTypes: {
+    initialHours: React.PropTypes.number,
+    onChange: React.PropTypes.func,
+    format: React.PropTypes.oneOf(['ampm', '24hr'])
+  },
+
+  center: {x: 0, y: 0},
+  basePoint: {x: 0, y: 0},
+  isMousePressed: function(e){
+
+    if(typeof e.buttons == "undefined"){
+      return e.nativeEvent.which;
+    }
+
+    return e.buttons;
+
+  },
+  getDefaultProps: function() {
+    return {
+      initialHours: new Date().getHours(),
+      onChange: function(){},
+      format: 'ampm'
+    };
+  },
+
+  componentDidMount: function () {
+    var clockElement = this.refs.mask.getDOMNode();
+
+      this.center = {
+        x: clockElement.offsetWidth / 2,
+        y: clockElement.offsetHeight / 2,
+      };
+
+      this.basePoint = {
+        x: this.center.x,
+        y: 0
+      }; 
+  },
+  handleUp: function(e){
+    e.preventDefault(); 
+    this.setClock(e, true);
+  },
+  handleMove: function(e){
+     e.preventDefault();
+    if(this.isMousePressed(e) != 1 ) return;
+    this.setClock(e, false);
+  },
+  handleTouch: function(e){
+    e.preventDefault(); 
+    this.setClock(e, false);
+  },
+  setClock: function(e, finish){
+
+     
+     var pos = {
+        x: e.nativeEvent.offsetX,
+        y: e.nativeEvent.offsetY
+     };
+  
+    var hours = this.getHours(pos.x, pos.y);
+ 
+    this.props.onChange(hours, finish);
+     
+  },
+  getHours: function(x, y){
+
+    var step = 30;
+    x = x - this.center.x;
+    y = y - this.center.y;
+    var cx = this.basePoint.x - this.center.x;
+    var cy = this.basePoint.y - this.center.y;
+
+    var atan = Math.atan2(cx, cy) -  Math.atan2(x, y);
+
+    var deg = rad2deg(atan);
+    deg = Math.round(deg / step ) * step;
+    deg %= 360;
+
+    var value = Math.floor(deg / step) || 0;
+
+    var delta = Math.pow(x, 2) + Math.pow(y, 2);
+    var distance = Math.sqrt(delta);
+    
+    value = value || 12;
+    if(this.props.format == "24hr"){
+      if(distance < 90){
+        value += 12;
+        value %= 24;  
+      }
+    }else{
+      value %= 12;
+    }
+
+    return value;
+
+  },
+  _getSelected: function(){
+
+    var hour = this.props.initialHours;
+
+    if(this.props.format == "ampm"){
+      hour %= 12;
+      hour = hour || 12;
+    }
+
+    return hour;
+  },
+  _getHourNumbers: function(){
+    var style = {
+      pointerEvents: "none"
+    };  
+
+    var hourSize = this.props.format == 'ampm' ? 12 : 24;
+
+    var hours = [];
+
+    for(var i = 1; i <= hourSize; i++){
+      hours.push(i % 24);
+    }
+
+    return hours.map(function(hour){ 
+
+      var isSelected = this._getSelected() == hour;  
+      return React.createElement(ClockNumber, {style: style, isSelected: isSelected, type: "hour", value: hour});
+
+    }.bind(this));
+
+  },
+ 
+  render: function() {
+
+    var styles = {
+      root: {
+        height: "100%",
+        width: "100%",
+        borderRadius: "100%",
+        position: "relative",
+        pointerEvents: "none",
+        boxSizing: "border-box",
+      },
+
+      hitMask: {
+        height: "100%",
+        width: "100%",
+        pointerEvents: "auto",
+      },
+
+    };
+
+
+    var hours = this._getSelected();
+    var numbers = this._getHourNumbers();
+   
+    return (
+      React.createElement("div", {ref: "clock", style: this.mergeAndPrefix(styles.root)}, 
+        React.createElement(ClockPointer, {hasSelected: true, value: hours, type: "hour"}), 
+        numbers, 
+        React.createElement("div", {ref: "mask", style: this.mergeAndPrefix(styles.hitMask), onTouchMove: this.handleTouch, onTouchEnd: this.handleUp, onMouseUp: this.handleUp, onMouseMove: this.handleMove})
+      )
+    );
+  }
+});
+
+module.exports = ClockHours;
+ 
+},{"../mixins/style-propable":32,"./clock-number":68,"./clock-pointer":69,"react":undefined}],67:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var ClockNumber = require("./clock-number");
+var ClockPointer = require("./clock-pointer");
+
+function rad2deg(rad){
+  return rad * 57.29577951308232
+}
+
+var ClockMinutes = React.createClass({displayName: "ClockMinutes",
+
+  mixins: [StylePropable],
+
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+
+  propTypes: {
+    initialMinutes: React.PropTypes.number,
+    onChange: React.PropTypes.func
+  },
+
+  center: {x: 0, y: 0},
+  basePoint: {x: 0, y: 0},
+  isMousePressed: function(e){
+
+    if(typeof e.buttons == "undefined"){
+      return e.nativeEvent.which;
+    } 
+    return e.buttons;
+
+  },
+  getDefaultProps: function() {
+    return {
+      initialMinutes: new Date().getMinutes(),
+      onChange: function(){}
+    };
+  },
+ 
+  componentDidMount: function () {
+    var clockElement = this.refs.mask.getDOMNode();
+
+      this.center = {
+        x: clockElement.offsetWidth / 2,
+        y: clockElement.offsetHeight / 2,
+      };
+
+      this.basePoint = {
+        x: this.center.x,
+        y: 0
+      };
+
+  },
+  handleUp: function(e){
+    e.preventDefault(); 
+    this.setClock(e, true);
+  },
+  handleMove: function(e){
+    e.preventDefault();
+    if(this.isMousePressed(e) != 1 ) return;
+    this.setClock(e, false);
+  },
+  handleTouch: function(e){
+    e.preventDefault(); 
+    this.setClock(e, false);
+  },
+  setClock: function(e, finish){
+
+     e.preventDefault();
+     if(this.isMousePressed(e) != 1 ) return;
+     
+     var pos = {
+        x: e.nativeEvent.offsetX,
+        y: e.nativeEvent.offsetY
+     };
+  
+     var minutes = this.getMinutes(pos.x, pos.y)
+ 
+     this.props.onChange(minutes, finish);
+   
+  },
+  getMinutes: function(x, y){
+
+    var step = 6;
+    x = x - this.center.x;
+    y = y - this.center.y;
+    var cx = this.basePoint.x - this.center.x;
+    var cy = this.basePoint.y - this.center.y;
+
+    var atan = Math.atan2(cx, cy) -  Math.atan2(x, y);
+
+    var deg = rad2deg(atan);
+    deg = Math.round(deg / step ) * step;
+    deg %= 360;
+
+    var value = Math.floor(deg / step) || 0;
+
+    return value;
+
+  },
+  _getMinuteNumbers: function(){
+
+    var minutes = [];
+    for(var i = 0; i < 12; i++){
+      minutes.push(i * 5);
+    }
+    var selectedMinutes = this.props.initialMinutes;
+
+   
+    var hasSelected = false;
+
+    var numbers = minutes.map(function(minute){   
+      var isSelected = selectedMinutes == minute;   
+      if(isSelected) hasSelected = true;
+      return React.createElement(ClockNumber, {isSelected: isSelected, type: "minute", value: minute});
+    }.bind(this));
+
+    return {
+      numbers: numbers,
+      hasSelected: hasSelected,
+      selected: selectedMinutes
+    }
+
+  },
+  render: function() {
+
+
+    var styles = {
+      root: {
+        height: "100%",
+        width: "100%",
+        borderRadius: "100%",
+        position: "relative",
+        pointerEvents: "none",
+        boxSizing: "border-box",
+      },
+
+      hitMask: {
+        height: "100%",
+        width: "100%",
+        pointerEvents: "auto",
+      },
+
+    };
+
+    var minutes = this._getMinuteNumbers();
+     
+     
+    return (
+      React.createElement("div", {ref: "clock", style: this.mergeAndPrefix(styles.root)}, 
+        React.createElement(ClockPointer, {value: minutes.selected, type: "minute"}), 
+        minutes.numbers, 
+        React.createElement("div", {ref: "mask", style: this.mergeAndPrefix(styles.hitMask), hasSelected: minutes.hasSelected, onTouchMove: this.handleTouch, onTouchEnd: this.handleUp, onMouseUp: this.handleUp, onMouseMove: this.handleMove})
+      )
+    );
+  }
+});
+
+module.exports = ClockMinutes;
+ 
+},{"../mixins/style-propable":32,"./clock-number":68,"./clock-pointer":69,"react":undefined}],68:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var ClockNumber = React.createClass({displayName: "ClockNumber",
+
+  mixins: [StylePropable],
+  
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+  
+  propTypes: {
+    value: React.PropTypes.number,
+    type: React.PropTypes.oneOf(['hour', 'minute']),
+    onSelected: React.PropTypes.func,
+    isSelected: React.PropTypes.bool
+  },
+  getDefaultProps: function() {
+    return {
+      value: 0,
+      type: 'minute',
+      isSelected: false
+    };
+  },
+  getTheme: function() {
+    return this.context.theme.component.timePicker;
+  },
+  render: function() {
+
+    var pos = this.props.value;
+
+    var inner = false;
+
+    if(this.props.type == "hour"){
+      inner = pos < 1 || pos > 12;
+      pos %= 12;
+    }else{
+      pos = pos / 5; 
+    }
+
+    var positions = [
+      [0, 5],
+      [54.5, 16.6],
+      [94.4, 59.5],
+      [109, 114],
+      [94.4, 168.5],
+      [54.5, 208.4],
+      [0, 223],
+      [-54.5, 208.4],
+      [-94.4, 168.5],
+      [-109, 114],
+      [-94.4, 59.5],
+      [-54.5, 19.6]
+    ];
+
+    var innerPositions = [
+      [0, 40],
+      [36.9, 49.9],
+      [64, 77],
+      [74, 114],
+      [64, 151],
+      [37, 178],
+      [0, 188],
+      [-37, 178],
+      [-64, 151],
+      [-74, 114],
+      [-64, 77],
+      [-37, 50]
+    ];
+
+    var styles = {
+      root: {
+        display: "inline-block",
+        position: "absolute",
+        width: "32px",
+        height: "32px",
+        borderRadius: "100%",
+        left: 'calc(50% - 16px)',
+        top: "10px",
+        textAlign: "center",
+        paddingTop: '5px',
+        userSelect: "none",  /* Chrome all / Safari all */
+        fontSize: "1.1em", 
+        pointerEvents: "none",
+        boxSizing: "border-box",
+      }
+      
+    }
+
+    if(this.props.isSelected){
+      styles.root.backgroundColor = this.getTheme().accentColor;
+      styles.root.color = this.getTheme().selectTextColor;
+    }
+
+    var transformPos = positions[pos];
+
+    if(inner){
+      styles.root.width = "28px";
+      styles.root.height = "28px"; 
+      styles.root.left = 'calc(50% - 14px)';
+      transformPos = innerPositions[pos];
+    }    
+
+    var $__0=   transformPos,x=$__0[0],y=$__0[1];
+
+    styles.root.transform = "translate(" + x + "px, " + y + "px)";
+
+ 
+
+    return (
+        React.createElement("span", {style: styles.root}, this.props.value)       
+    );
+  }
+});
+
+module.exports = ClockNumber;
+},{"../mixins/style-propable":32,"react":undefined}],69:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var ClockPointer = React.createClass({displayName: "ClockPointer",
+
+  mixins: [StylePropable],
+  
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+  
+  propTypes: {
+    value: React.PropTypes.number,
+    type: React.PropTypes.oneOf(['hour', 'minute'])
+  },
+
+  getInitialState: function () {
+     return {
+        inner: this.isInner(this.props.value)
+    };
+  },
+  getDefaultProps: function() {
+    return {
+      value: null,
+      type: 'minute',
+      hasSelected: false
+    };
+  },
+  componentWillReceiveProps: function (nextProps) {
+      
+  	this.setState({
+        inner: this.isInner(nextProps.value)
+  	});
+  },
+  isInner: function(value){
+	if(this.props.type != "hour" ) {
+		return false;
+	}
+	return value < 1 || value > 12 ;
+  },
+  getAngle: function(){
+
+  	if(this.props.type == "hour"){
+  		return this.calcAngle(this.props.value, 12);
+  	}
+  	
+  	return this.calcAngle(this.props.value, 60);
+
+  },
+  calcAngle: function(value, base){  	
+  	value %= base;
+  	var angle = 360 / base * value;
+  	return angle;
+
+  },
+  getTheme: function() {
+    return this.context.theme.component.timePicker;
+  },
+  render: function() {
+
+  	if(this.props.value == null){
+  		return React.createElement("span", null);
+  	}
+
+  	var angle = this.getAngle();
+
+    var styles = {
+      root: {
+        height: "30%",
+        background: this.getTheme().accentColor,
+        width: "2px",
+        left: 'calc(50% - 1px)',
+        position: "absolute",
+        bottom: "50%",
+        transformOrigin: "bottom",
+        pointerEvents: "none",
+        transform: "rotateZ(" + angle + "deg)"
+      },
+      mark: {
+        background:  this.getTheme().selectTextColor,
+        border: "4px solid " +  this.getTheme().accentColor,
+        width: "7px",
+        height: "7px",
+        position: "absolute",
+        top: "-5px",
+        left: "-6px",
+        borderRadius: "100%",
+      }
+    };
+
+
+    if(!this.state.inner ){
+      styles.root.height = "40%"; 
+  	};
+
+    if(this.props.hasSelected){
+      styles.mark.display = "none";
+    }
+
+    return (
+        React.createElement("div", {style: styles.root}, 
+          React.createElement("div", {style: styles.mark})
+        )        
+    );
+  }
+});
+
+module.exports = ClockPointer;
+
+},{"../mixins/style-propable":32,"react":undefined}],70:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var TimeDisplay = require("./time-display");
+var ClockButton = require("./clock-button");
+var ClockHours = require("./clock-hours");
+var ClockMinutes = require("./clock-minutes");
+var SlideInTransitionGroup = require('../transition-groups/slide-in');
+
+var Clock = React.createClass({displayName: "Clock",
+
+  mixins: [StylePropable],
+
+  propTypes: {
+    initialTime: React.PropTypes.object,
+    mode: React.PropTypes.oneOf(['hour', 'minute']),
+    format: React.PropTypes.oneOf(['ampm', '24hr']),
+    isActive: React.PropTypes.bool
+  },
+ 
+  init: function(){
+    this.setState({
+      mode: 'hour'
+    })
+  },
+
+  getDefaultProps: function() {
+    return {
+      initialTime: new Date() 
+    };
+  },
+
+  componentWillReceiveProps: function (nextProps) {
+   
+    this.setState({
+      selectedTime: nextProps.initialTime
+    });
+  },
+
+  getInitialState: function() {
+
+    return {
+      selectedTime: this.props.initialTime,
+      mode: 'hour'  
+    };
+  },
+
+
+  _setMode: function(mode){
+    setTimeout(function(){
+        this.setState({
+          mode: mode
+        })
+      }.bind(this), 100);
+  },
+ 
+  _setAffix: function(affix){
+
+    if(affix == this._getAffix()) return;
+
+    var hours = this.state.selectedTime.getHours();
+
+    if(affix == "am"){
+      this.handleChangeHours(hours - 12);
+      return;
+    }
+
+    this.handleChangeHours(hours + 12);
+  },
+
+  _getAffix: function(){
+
+    if(this.props.format != "ampm") return "";
+
+    var hours = this.state.selectedTime.getHours();
+    if(hours < 12){
+      return "am";
+    }
+
+    return "pm";
+
+  },
+
+  _getButtons: function(){
+    var buttons = [];
+    var isAM = this._getIsAM();
+   
+    if(this.props.format == 'ampm'){
+      buttons = [
+        React.createElement(ClockButton, {position: "left", onTouchTap: this._setAffix.bind(this, "am"), selected: isAM}, "AM"),
+        React.createElement(ClockButton, {position: "right", onTouchTap: this._setAffix.bind(this, "pm"), selected: !isAM}, "PM")
+      ];
+    }
+    return buttons; 
+  },
+
+  _getIsAM: function(){
+
+    return this._getAffix() == "am";
+
+  },
+
+  render: function() {
+
+    var clock = null;
+    var buttons = this._getButtons(); 
+
+    var styles = {
+      root: {},
+
+      container: {
+        height: "280px",
+        padding: "10px",
+      }
+    };
+
+
+
+    if( this.state.mode == "hour"){
+      clock = React.createElement(ClockHours, {key: "hours", 
+                format: this.props.format, 
+                onChange: this.handleChangeHours, 
+                initialHours: this.state.selectedTime.getHours()})
+    }else{
+      clock = React.createElement(ClockMinutes, {key: "minutes", 
+                onChange: this.handleChangeMinutes, 
+                initialMinutes: this.state.selectedTime.getMinutes()})
+   
+    }
+
+
+    return (
+      React.createElement("div", {style: styles.root}, 
+        
+        React.createElement(TimeDisplay, {
+          selectedTime: this.state.selectedTime, 
+          mode: this.state.mode, 
+          format: this.props.format, 
+          affix: this._getAffix(), 
+          onSelectHour: this._setMode.bind(this, 'hour'), 
+          onSelectMin: this._setMode.bind(this, 'minute')}
+           ), 
+        
+        React.createElement("div", {
+          style: styles.container}, 
+          clock
+        ), 
+       buttons
+      )
+    );
+  },
+  handleChangeHours: function(hours, finished){
+    var time = new Date(this.state.selectedTime);
+     
+    time.setHours(hours);
+    this.setState({
+      selectedTime: time
+    });    
+
+    if(finished){
+      setTimeout(function(){
+        this.setState({
+          mode: 'minute'
+        })
+      }.bind(this), 100);
+    }
+  },
+  handleChangeMinutes: function(minutes){
+    var time = new Date(this.state.selectedTime);
+    time.setMinutes(minutes);
+    this.setState({
+      selectedTime: time
+    });
+  },
+  getSelectedTime: function(){
+    return this.state.selectedTime;
+  }
+});
+
+module.exports = Clock;
+},{"../mixins/style-propable":32,"../transition-groups/slide-in":82,"./clock-button":65,"./clock-hours":66,"./clock-minutes":67,"./time-display":72,"react":undefined}],71:[function(require,module,exports){
+module.exports = require('./time-picker');
+},{"./time-picker":74}],72:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var SlideInTransitionGroup = require('../transition-groups/slide-in');
+
+var TimeDisplay = React.createClass({displayName: "TimeDisplay",
+
+  mixins: [StylePropable],
+ 
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+
+  propTypes: {
+    selectedTime: React.PropTypes.object.isRequired,
+    format: React.PropTypes.oneOf(['ampm', '24hr']),
+    mode: React.PropTypes.oneOf(['hour', 'minute']),
+    affix: React.PropTypes.oneOf(['', 'pm', 'am'])
+  },
+
+  getInitialState: function() {
+    return {
+      transitionDirection: 'up'
+    };
+  },
+  getDefaultProps: function () {
+      return {
+          mode: 'hour' ,
+          affix: '' 
+      };
+  },
+  componentWillReceiveProps: function(nextProps) {
+    var direction;
+
+    if (nextProps.selectedTime !== this.props.selectedTime) {
+      direction = nextProps.selectedTime > this.props.selectedTime ? 'up' : 'down';
+      this.setState({
+        transitionDirection: direction
+      });
+    }
+  },
+  sanitizeTime: function(time){
+    var hour = this.props.selectedTime.getHours();
+    var min = this.props.selectedTime.getMinutes().toString();
+
+    if(this.props.format == "ampm"){
+
+      hour %= 12;
+      hour = hour || 12;
+    }
+
+    hour = hour.toString();
+    if(hour.length < 2 ) hour = "0" + hour;
+    if(min.length < 2 ) min = "0" + min;
+
+    return [hour, min];
+  },
+  getTheme: function() {
+    return this.context.theme.component.timePicker;
+  },
+  render: function() {
+    
+		var $__0=
+			
+			
+			
+		  this.props,selectedTime=$__0.selectedTime,mode=$__0.mode,other=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{selectedTime:1,mode:1});
+     
+		var styles = {
+			root: {
+				textAlign: "center",
+				position: "relative",
+				width: "280px",
+				height: "100%",
+			},
+
+			time: {
+				margin: "6px 0",
+				lineHeight: "58px",
+				height: "58px",
+				fontSize: "58px",
+			},
+
+			box: {
+				padding: "16px 0",
+		    backgroundColor: this.getTheme().color,
+		    color: this.getTheme().textColor,
+			},
+
+
+			hour: {}, 
+			
+			minute: {}
+		}
+
+
+    var $__1=    this.sanitizeTime(),hour=$__1[0],min=$__1[1];
+    
+     
+    var hourClassName = "";
+    var minClassName = "";
+
+    styles[mode].color = this.getTheme().accentColor;
+
+    return (
+      React.createElement("div", React.__spread({},  other, {style: this.mergeAndPrefix(styles.root)}), 
+
+        React.createElement("div", {style: this.mergeAndPrefix(styles.box)}, 
+ 
+         
+          React.createElement("div", {style: this.mergeAndPrefix(styles.time)}, 
+            React.createElement("span", {style: this.mergeAndPrefix(styles.hour), onTouchTap: this.props.onSelectHour}, hour), 
+            React.createElement("span", null, ":"), 
+            React.createElement("span", {style: this.mergeAndPrefix(styles.minute), onTouchTap: this.props.onSelectMin}, min)
+          ), 
+         React.createElement("span", {key: "affix"}, this.props.affix.toUpperCase())
+          
+
+        )
+
+      )
+    );
+  }
+
+});
+
+module.exports = TimeDisplay;
+
+
+ 
+},{"../mixins/style-propable":32,"../transition-groups/slide-in":82,"react":undefined}],73:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+var WindowListenable = require('../mixins/window-listenable');
+var KeyCode = require('../utils/key-code');
+var Clock = require('./clock');
+var DialogWindow = require('../dialog-window');
+var FlatButton = require('../flat-button');
+
+var TimePickerDialog = React.createClass({displayName: "TimePickerDialog",
+
+  mixins: [StylePropable, WindowListenable],
+  
+  contextTypes: {
+    theme: React.PropTypes.object
+  },
+
+  propTypes: {
+    initialTime: React.PropTypes.object,
+    onAccept: React.PropTypes.func,
+    onShow: React.PropTypes.func,
+    onDismiss: React.PropTypes.func,
+  },
+
+  windowListeners: {
+    'keyup': '_handleWindowKeyUp'
+  },
+
+ 
+  getTheme: function() {
+    return this.context.theme.component.timePicker;
+  },
+  render: function() {
+    var $__0=
+      
+      
+      
+      
+      this.props,initialTime=$__0.initialTime,onAccept=$__0.onAccept,format=$__0.format,other=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{initialTime:1,onAccept:1,format:1});
+   
+    var styles = {
+      root: {
+        fontSize: "14px",
+        color: this.getTheme().clockColor,
+      },
+      dialogContent: {
+        width: "280px",
+      }
+    };
+   
+    var actions = [
+      React.createElement(FlatButton, {
+        key: 0, 
+        label: "Cancel", 
+        secondary: true, 
+        onTouchTap: this._handleCancelTouchTap}),
+      React.createElement(FlatButton, {
+        key: 1, 
+        label: "OK", 
+        secondary: true, 
+        onTouchTap: this._handleOKTouchTap})
+    ];
+
+    return (
+      React.createElement(DialogWindow, React.__spread({},  other, 
+        {ref: "dialogWindow", 
+        style: this.mergeAndPrefix(styles.root), 
+        actions: actions, 
+        contentStyle: styles.dialogContent, 
+        onDismiss: this._handleDialogDismiss, 
+        onShow: this._handleDialogShow, 
+        repositionOnUpdate: false}), 
+        React.createElement(Clock, {
+          ref: "clock", 
+          format: format, 
+          initialTime: initialTime})
+      )
+    );
+  },
+
+  show: function() {
+    this.refs.dialogWindow.show();
+    this.refs.clock.init();
+  },
+
+  dismiss: function() {
+    this.refs.dialogWindow.dismiss();
+  },
+
+  _handleCancelTouchTap: function() {
+    this.dismiss();
+  },
+
+  _handleOKTouchTap: function() {
+    this.dismiss();
+    if (this.props.onAccept) {
+      this.props.onAccept(this.refs.clock.getSelectedTime());
+    }
+  },
+
+  _handleDialogShow: function() {
+
+    if(this.props.onShow) {
+      this.props.onShow();
+    }
+  },
+
+  _handleDialogDismiss: function() {
+   
+
+    if(this.props.onDismiss) {
+      this.props.onDismiss();
+    }
+  },
+
+  _handleWindowKeyUp: function(e) {
+    if (this.refs.dialogWindow.isOpen()) {
+      switch (e.keyCode) {
+        case KeyCode.ENTER:
+          this._handleOKTouchTap();
+          break;
+      }
+    } 
+  }
+
+});
+
+module.exports = TimePickerDialog;
+},{"../dialog-window":13,"../flat-button":20,"../mixins/style-propable":32,"../mixins/window-listenable":33,"../utils/key-code":89,"./clock":70,"react":undefined}],74:[function(require,module,exports){
+var React = require('react');
+var StylePropable = require('../mixins/style-propable');
+
+var WindowListenable = require('../mixins/window-listenable');
+var DateTime = require('../utils/date-time');
+var KeyCode = require('../utils/key-code');
+var TimePickerDialog = require('./time-picker-dialog');
+var TextField = require('../text-field');
+
+var emptyTime = new Date();
+emptyTime.setHours(0);
+emptyTime.setMinutes(0);
+
+var TimePicker = React.createClass({displayName: "TimePicker",
+
+  mixins: [StylePropable, WindowListenable],
+
+  propTypes: {
+    defaultTime: React.PropTypes.object, 
+    format: React.PropTypes.oneOf(['ampm', '24hr']),
+    onFocus: React.PropTypes.func,
+    onTouchTap: React.PropTypes.func,
+    onChange: React.PropTypes.func,
+    onShow: React.PropTypes.func,
+    onDismiss: React.PropTypes.func,
+  },
+
+  windowListeners: {
+    'keyup': '_handleWindowKeyUp'
+  },
+
+  getDefaultProps: function() {
+    return {
+      defaultTime: emptyTime,
+      format: 'ampm'
+    };
+  },
+
+  getInitialState: function() {
+    return {
+      time: this.props.defaultTime,
+      dialogTime: new Date()
+    };
+  },
+  formatTime: function(date){
+
+    var hours = date.getHours();
+    var mins = date.getMinutes();
+    var aditional = "";
+
+    if(this.props.format == "ampm"){
+      var isAM = hours < 12;
+      hours = hours % 12;
+      aditional +=  isAM ? " am" : " pm";
+      hours = hours || 12;
+    }
+
+    hours = hours.toString();
+    mins = mins.toString();
+
+    if(hours.length < 2) hours = "0" + hours;
+    if(mins.length < 2) mins = "0" + mins;
+    
+    return  hours + ":" + mins + aditional;
+  },
+  render: function() {
+    var $__0=
+      
+      
+      
+      
+      
+      
+      this.props,format=$__0.format,onFocus=$__0.onFocus,onTouchTap=$__0.onTouchTap,onShow=$__0.onShow,onDismiss=$__0.onDismiss,other=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{format:1,onFocus:1,onTouchTap:1,onShow:1,onDismiss:1});
+
+    var defaultInputValue;
+
+    if (this.props.defaultDate) {
+      defaultInputValue = this.formatTime(this.props.defaultTime);
+    }
+
+    return (
+      React.createElement("div", null, 
+        React.createElement(TextField, React.__spread({}, 
+          other, 
+          {ref: "input", 
+          defaultValue: defaultInputValue, 
+          onFocus: this._handleInputFocus, 
+          onTouchTap: this._handleInputTouchTap})), 
+        React.createElement(TimePickerDialog, {
+          ref: "dialogWindow", 
+          initialTime: this.state.dialogTime, 
+          onAccept: this._handleDialogAccept, 
+          onShow: onShow, 
+          onDismiss: onDismiss, 
+          format: format})
+      )
+
+    );
+  },
+
+  getTime: function() {
+    return this.state.time;
+  },
+
+  setTime: function(t) {
+    this.setState({
+      time: t 
+    });
+    this.refs.input.setValue(this.formatTime(t));
+  },
+
+  _handleDialogAccept: function(t) {
+
+    this.setTime(t);
+    if (this.props.onChange) this.props.onChange(null, t);
+  },
+
+  _handleInputFocus: function(e) {
+    e.target.blur();
+    if (this.props.onFocus) this.props.onFocus(e);
+  },
+
+  _handleInputTouchTap: function(e) {
+    this.setState({
+      dialogTime: this.getTime()
+    });
+   
+    this.refs.dialogWindow.show();
+    if (this.props.onTouchTap) this.props.onTouchTap(e);
+  } 
+
+});
+
+module.exports = TimePicker;
+
+},{"../mixins/style-propable":32,"../mixins/window-listenable":33,"../text-field":64,"../utils/date-time":85,"../utils/key-code":89,"./time-picker-dialog":73,"react":undefined}],75:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Transitions = require('./styles/transitions');
@@ -7891,7 +9145,7 @@ var Toggle = React.createClass({displayName: "Toggle",
 
 module.exports = Toggle;
 
-},{"./enhanced-switch":18,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"react":undefined}],66:[function(require,module,exports){
+},{"./enhanced-switch":18,"./mixins/style-propable":32,"./paper":35,"./styles/transitions":50,"react":undefined}],76:[function(require,module,exports){
 var React = require('react');
 var Colors = require('../styles/colors');
 var StylePropable = require('../mixins/style-propable');
@@ -8047,7 +9301,7 @@ var ToolbarGroup = React.createClass({displayName: "ToolbarGroup",
 
 module.exports = ToolbarGroup;
 
-},{"../mixins/style-propable":32,"../styles/colors":45,"react":undefined}],67:[function(require,module,exports){
+},{"../mixins/style-propable":32,"../styles/colors":45,"react":undefined}],77:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 
@@ -8088,7 +9342,7 @@ var ToolbarSeparator = React.createClass({displayName: "ToolbarSeparator",
 
 module.exports = ToolbarSeparator;
 
-},{"../mixins/style-propable":32,"react":undefined}],68:[function(require,module,exports){
+},{"../mixins/style-propable":32,"react":undefined}],78:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 
@@ -8127,7 +9381,7 @@ var ToolbarTitle = React.createClass({displayName: "ToolbarTitle",
 
 module.exports = ToolbarTitle;
 
-},{"../mixins/style-propable":32,"react":undefined}],69:[function(require,module,exports){
+},{"../mixins/style-propable":32,"react":undefined}],79:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('../mixins/style-propable');
 
@@ -8176,7 +9430,7 @@ var Toolbar = React.createClass({displayName: "Toolbar",
 
 module.exports = Toolbar;
 
-},{"../mixins/style-propable":32,"react":undefined}],70:[function(require,module,exports){
+},{"../mixins/style-propable":32,"react":undefined}],80:[function(require,module,exports){
 var React = require('react');
 var StylePropable = require('./mixins/style-propable');
 var Transitions = require('./styles/transitions');
@@ -8305,7 +9559,7 @@ var Tooltip = React.createClass({displayName: "Tooltip",
 });
 
 module.exports = Tooltip;
-},{"./mixins/style-propable":32,"./styles/colors":45,"./styles/transitions":50,"react":undefined}],71:[function(require,module,exports){
+},{"./mixins/style-propable":32,"./styles/colors":45,"./styles/transitions":50,"react":undefined}],81:[function(require,module,exports){
 var React = require('react/addons');
 var ReactTransitionGroup = React.addons.TransitionGroup;
 var StylePropable = require('../mixins/style-propable');
@@ -8381,7 +9635,7 @@ var SlideInChild = React.createClass({displayName: "SlideInChild",
 });
 
 module.exports = SlideInChild;
-},{"../mixins/style-propable":32,"../styles/auto-prefix":44,"../styles/transitions":50,"react/addons":undefined}],72:[function(require,module,exports){
+},{"../mixins/style-propable":32,"../styles/auto-prefix":44,"../styles/transitions":50,"react/addons":undefined}],82:[function(require,module,exports){
 var React = require('react/addons');
 var ReactTransitionGroup = React.addons.TransitionGroup;
 var StylePropable = require('../mixins/style-propable');
@@ -8442,7 +9696,7 @@ var SlideIn = React.createClass({displayName: "SlideIn",
 });
 
 module.exports = SlideIn;
-},{"../mixins/style-propable":32,"./slide-in-child":71,"react/addons":undefined}],73:[function(require,module,exports){
+},{"../mixins/style-propable":32,"./slide-in-child":81,"react/addons":undefined}],83:[function(require,module,exports){
 module.exports = {
 
   /**
@@ -8626,7 +9880,7 @@ module.exports = {
 
 };
 
-},{}],74:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 var Events = require('./events');
 
 module.exports = {
@@ -8679,7 +9933,7 @@ module.exports = {
   }
 
 };
-},{"./events":77}],75:[function(require,module,exports){
+},{"./events":87}],85:[function(require,module,exports){
 module.exports = {
 
   addDays: function(d, days) {
@@ -8812,7 +10066,7 @@ module.exports = {
   }
 
 }
-},{}],76:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 module.exports = {
 
   isDescendant: function(parent, child) {
@@ -8884,7 +10138,7 @@ module.exports = {
   }
   
 }
-},{}],77:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 module.exports = {
 
   once: function(el, type, callback) {
@@ -8919,7 +10173,7 @@ module.exports = {
     }
   }
 };
-},{}],78:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 // http://stackoverflow.com/questions/1187518/javascript-array-difference
 Array.prototype.diff = function(a) {
     return this.filter(function(i) {return a.indexOf(i) < 0;});
@@ -8965,7 +10219,7 @@ var extend = function(object, overrides) {
 };
 
 module.exports = extend;
-},{}],79:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 module.exports = {
   DOWN: 40,
   ESC: 27,
@@ -8976,7 +10230,7 @@ module.exports = {
   TAB: 9,
   UP: 38
 }
-},{}],80:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 module.exports = {
 
   Desktop: {
@@ -8991,7 +10245,7 @@ module.exports = {
   }
 }
 
-},{}],81:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-borderradius-boxshadow-opacity-csstransforms-csstransforms3d-csstransitions-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes
  */
@@ -9305,7 +10559,7 @@ module.exports = (function( window, document, undefined ) {
 
 })(window, window.document);
 ;
-},{}],82:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
 var index = 0;
 
 module.exports = {
@@ -9314,7 +10568,7 @@ module.exports = {
   }
 };
 
-},{}],83:[function(require,module,exports){
+},{}],93:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -9402,7 +10656,7 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-},{}],84:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 /*!
   Copyright (c) 2015 Jed Watson.
   Licensed under the MIT License (MIT), see
@@ -9447,7 +10701,7 @@ if (typeof define !== 'undefined' && define.amd) {
 	});
 }
 
-},{}],85:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 'use strict';
 
 var React = require('react/addons');
@@ -10165,6 +11419,7 @@ module.exports = {
   Tab: require('./tabs/tab'),
   Tabs: require('./tabs/tabs'),
   Toggle: require('./toggle'),
+  TimePicker: require('./time-picker'),
   TextField: require('./text-field'),
   Toolbar: require('./toolbar/toolbar'),
   ToolbarGroup: require('./toolbar/toolbar-group'),
@@ -10183,5 +11438,5 @@ module.exports = {
   }
 };
 
-},{"./app-bar":1,"./app-canvas":2,"./checkbox":4,"./date-picker/date-picker":11,"./dialog":14,"./dialog-window":13,"./drop-down-icon":15,"./drop-down-menu":16,"./enhanced-button":17,"./flat-button":20,"./floating-action-button":21,"./font-icon":22,"./icon-button":23,"./left-nav":25,"./menu/menu":28,"./menu/menu-item":27,"./mixins/classable":30,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./paper":35,"./radio-button":37,"./radio-button-group":36,"./raised-button":38,"./slider":42,"./snackbar":43,"./styles/auto-prefix":44,"./styles/colors":45,"./styles/spacing":46,"./styles/theme-manager":47,"./styles/transitions":50,"./styles/typography":51,"./svg-icon":52,"./svg-icons/navigation-chevron-left":54,"./svg-icons/navigation-chevron-right":55,"./svg-icons/navigation-menu":56,"./tabs/tab":61,"./tabs/tabs":63,"./text-field":64,"./toggle":65,"./toolbar/toolbar":69,"./toolbar/toolbar-group":66,"./toolbar/toolbar-separator":67,"./toolbar/toolbar-title":68,"./tooltip":70,"./utils/color-manipulator":73,"./utils/css-event":74,"./utils/dom":76,"./utils/events":77,"./utils/extend":78,"./utils/key-code":79,"./utils/key-line":80,"./utils/unique-id":82}]},{},[])("/lib")
+},{"./app-bar":1,"./app-canvas":2,"./checkbox":4,"./date-picker/date-picker":11,"./dialog":14,"./dialog-window":13,"./drop-down-icon":15,"./drop-down-menu":16,"./enhanced-button":17,"./flat-button":20,"./floating-action-button":21,"./font-icon":22,"./icon-button":23,"./left-nav":25,"./menu/menu":28,"./menu/menu-item":27,"./mixins/classable":30,"./mixins/click-awayable":31,"./mixins/style-propable":32,"./mixins/window-listenable":33,"./paper":35,"./radio-button":37,"./radio-button-group":36,"./raised-button":38,"./slider":42,"./snackbar":43,"./styles/auto-prefix":44,"./styles/colors":45,"./styles/spacing":46,"./styles/theme-manager":47,"./styles/transitions":50,"./styles/typography":51,"./svg-icon":52,"./svg-icons/navigation-chevron-left":54,"./svg-icons/navigation-chevron-right":55,"./svg-icons/navigation-menu":56,"./tabs/tab":61,"./tabs/tabs":63,"./text-field":64,"./time-picker":71,"./toggle":75,"./toolbar/toolbar":79,"./toolbar/toolbar-group":76,"./toolbar/toolbar-separator":77,"./toolbar/toolbar-title":78,"./tooltip":80,"./utils/color-manipulator":83,"./utils/css-event":84,"./utils/dom":86,"./utils/events":87,"./utils/extend":88,"./utils/key-code":89,"./utils/key-line":90,"./utils/unique-id":92}]},{},[])("/lib")
 });

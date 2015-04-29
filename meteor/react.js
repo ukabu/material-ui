@@ -4,7 +4,7 @@
 var requireChain = typeof require == 'undefined' ? function(module) { throw Error('Cannot find module: '+module) } : require;
 
 require = function(module) {
-    if (module !== 'react' && module !== 'react/addons') requireChain.apply(arguments);
+    if (module !== 'react' && module !== 'react/addons') requireChain.apply(this, arguments);
 
     return Package['reactjs:react'].React;
 }

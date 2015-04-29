@@ -11,7 +11,9 @@
     "build:jsx": "./node_modules/.bin/jsx --harmony -x jsx ./src ./lib",
     "build": "npm run build:js && npm run build:jsx",
     "prepublish": "npm run build",
-    "build:meteor": "npm run build && ./node_modules/.bin/browserify -r ./lib -u react/addons -u react --standalone mui -o ./meteor-bundle.js"
+    "build:meteor:material-ui": "./node_modules/.bin/browserify -r ./lib -u react/addons -u react --standalone mui -o ./meteor-bundle.js",
+    "build:meteor:tap-event-plugin": "./node_modules/.bin/browserify -r react-tap-event-plugin -u react/addons -u react --standalone injectTapEventPlugin -o ./meteor-tap-event-plugin.js",
+    "build:meteor": "npm run build && npm run build:meteor:material-ui && npm run build:meteor:tap-event-plugin"
   },
   "keywords": [
     "react",
@@ -41,6 +43,7 @@
     "react-tools": "^0.13",
     "browserify": "^7.0.3",
     "reactify": "^1.1.0",
-    "react-router": "^0.13"
+    "react-router": "^0.13",
+    "react-tap-event-plugin": "^0.1.3"
   }
 }

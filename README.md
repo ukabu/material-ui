@@ -6,6 +6,18 @@ Material-UI is a set of [React](http://facebook.github.io/react/) components tha
 
 Check out our [documentation site](http://www.material-ui.com/) for live examples. It's still a work in progress, but hopefully you can see where we're headed.
 
+## Meteor
+
+This fork of http://callemall.github.io/material-ui/ add support to create a Meteor package. Testing have been done in a limited fashion. It should support both client and server side rendering but has only been tested for client rendering.
+
+The `meteor-bundle.js` file must be rebuild manually and comitted before pushing this package to Atmosphere (there is no way to do that automatically).
+
+To use this package, you MUST also add the **reactjs:react** package to your app. This package has a weak dependency on it so it is loaded first, but does not depends on a particular version of it.
+
+**WARNING** This package rely on a modified version of the **reactjs:react** that properly export the React object on the client. See https://github.com/reactjs/react-meteor/pull/74.
+
+This meteor package exports `mui` and `injectTapEventPlugin`.
+
 ## Prerequisites
 
 We recommend that you get started with the [React Library](http://facebook.github.io/react/) before diving into material-ui for a better understanding. Should you choose to skip this, don't worry, we'll explain relevant React concepts as they come along.
