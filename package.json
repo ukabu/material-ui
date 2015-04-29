@@ -10,7 +10,8 @@
     "build:js": "./node_modules/.bin/jsx --harmony ./src ./lib",
     "build:jsx": "./node_modules/.bin/jsx --harmony -x jsx ./src ./lib",
     "build": "npm run build:js && npm run build:jsx",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "build:meteor": "npm run build && ./node_modules/.bin/browserify -r ./lib -u react/addons -u react --standalone mui -o ./meteor-bundle.js"
   },
   "keywords": [
     "react",
