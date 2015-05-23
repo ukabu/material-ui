@@ -1,7 +1,7 @@
 Package.describe({
     name: "ukabu:material-ui",
     version: "0.8.0-alpha",
-    summary: "material-ui for Meteor apps",
+    summary: "React material-ui for Meteor apps",
     git: "https://github.com/ukabu/material-ui.git",
     documentation: "README.md"
 });
