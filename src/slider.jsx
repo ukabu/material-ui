@@ -11,7 +11,7 @@ var Slider = React.createClass({
   mixins: [StylePropable],
 
   contextTypes: {
-    theme: React.PropTypes.object
+    muiTheme: React.PropTypes.object
   },
 
   propTypes: {
@@ -24,6 +24,8 @@ var Slider = React.createClass({
     description: React.PropTypes.string,
     name: React.PropTypes.string.isRequired,
     onChange: React.PropTypes.func,
+    onFocus: React.PropTypes.func,
+    onBlur: React.PropTypes.func,
     onDragStart: React.PropTypes.func,
     onDragStop: React.PropTypes.func
   },
@@ -60,7 +62,7 @@ var Slider = React.createClass({
   },
 
   getTheme: function() {
-    return this.context.theme.component.slider;
+    return this.context.muiTheme.component.slider;
   },
 
   getStyles: function() {
@@ -192,13 +194,13 @@ var Slider = React.createClass({
       styles.handle,
       styles.handleWhenPercentZero,
       this.state.active && styles.handleWhenActive,
-      this.props.focused && {outline: 'none'},
+      this.state.focused && {outline: 'none'},
       this.state.hovered && styles.handleWhenPercentZeroAndHovered,
       this.props.disabled && styles.handleWhenDisabledAndZero
     ) : this.mergeAndPrefix(
       styles.handle,
       this.state.active && styles.handleWhenActive,
-      this.props.focused && {outline: 'none'},
+      this.state.focused && {outline: 'none'},
       this.props.disabled && styles.handleWhenDisabled
     );
 
@@ -294,10 +296,6 @@ var Slider = React.createClass({
     this.setValue(0);
   },
 
-  _handleWindowKeydown: function(e) {
-    if (e.keyCode == KeyCode.TAB) this._tabPressed = true;
-  },
-
   _onClick: function (e) {
     this._tabPressed = false;
     // let draggable handle the slider
@@ -311,10 +309,12 @@ var Slider = React.createClass({
 
   _onFocus: function (e) {    
     this.setState({focused: true});
+    if (this.props.onFocus) this.props.onFocus(e);
   },
 
   _onBlur: function (e) {
     this.setState({focused: false, active: false});
+    if (this.props.onBlur) this.props.onBlur(e);
   },
 
   _onMouseOver: function (e) {

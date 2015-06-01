@@ -11,7 +11,7 @@ var TextField = React.createClass({
   mixins: [StylePropable],
 
   contextTypes: {
-    theme: React.PropTypes.object
+    muiTheme: React.PropTypes.object
   },
 
   propTypes: {
@@ -68,7 +68,7 @@ var TextField = React.createClass({
   },
 
   getTheme: function() {
-    return this.context.theme.palette;
+    return this.context.muiTheme.palette;
   },
 
   getStyles: function() {
@@ -80,7 +80,7 @@ var TextField = React.createClass({
         height: (this.props.floatingLabelText) ? 72 : 48,
         display: 'inline-block',
         position: 'relative',
-        fontFamily: this.context.theme.contentFontFamily,
+        fontFamily: this.context.muiTheme.contentFontFamily,
         transition: Transitions.easeOut('200ms', 'height')
       },
       error: {
@@ -224,7 +224,7 @@ var TextField = React.createClass({
 
     inputProps = {
       id: inputId,
-      ref: 'input',
+      ref: this._getRef(),
       style: this.mergeAndPrefix(styles.input),
       onBlur: this._handleInputBlur,
       onFocus: this._handleInputFocus,
@@ -303,9 +303,13 @@ var TextField = React.createClass({
     }
   },
 
+  _getRef: function() {
+    return this.props.ref ? this.props.ref : 'input';
+  },
+
   _getInputNode: function() {
     return this.props.multiLine ?
-      this.refs.input.getInputNode() : React.findDOMNode(this.refs.input);
+      this.refs[this._getRef()].getInputNode() : React.findDOMNode(this.refs[this._getRef()]);
   },
 
   _handleInputBlur: function(e) {

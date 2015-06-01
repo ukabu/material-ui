@@ -1,6 +1,6 @@
 Package.describe({
     name: "ukabu:material-ui",
-    version: "0.8.0-beta",
+    version: "0.8.0-rc1",
     summary: "material-ui for Meteor apps",
     git: "https://github.com/ukabu/material-ui.git",
     documentation: "README.md"
