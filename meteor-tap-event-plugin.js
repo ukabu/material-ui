@@ -499,6 +499,15 @@ var eventTypes = {
   }
 };
 
+var now = function() {
+  if (Date.now) {
+    return Date.now();
+  } else {
+    // IE8 support: http://stackoverflow.com/questions/9430357/please-explain-why-and-how-new-date-works-as-workaround-for-date-now-in
+    return +new Date;
+  }
+}
+
 var TapEventPlugin = {
 
   tapMoveThreshold: tapMoveThreshold,
@@ -522,9 +531,9 @@ var TapEventPlugin = {
       nativeEvent) {
 
     if (isTouch(topLevelType)) {
-      lastTouchEvent = nativeEvent.timeStamp;
+      lastTouchEvent = now();
     } else {
-      if (lastTouchEvent && (nativeEvent.timeStamp - lastTouchEvent) < ignoreMouseThreshold) {
+      if (lastTouchEvent && (now() - lastTouchEvent) < ignoreMouseThreshold) {
         return null;
       }
     }
@@ -555,6 +564,7 @@ var TapEventPlugin = {
 };
 
 module.exports = TapEventPlugin;
+
 },{"./TouchEventUtils":4,"react/lib/EventConstants":5,"react/lib/EventPluginUtils":8,"react/lib/EventPropagators":9,"react/lib/SyntheticUIEvent":13,"react/lib/ViewportMetrics":14,"react/lib/keyOf":21}],4:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.

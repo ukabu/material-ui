@@ -18,6 +18,47 @@ You need to use **reactjs:react** version **0.2.4** and higher.
 
 This meteor package exports `mui` and `injectTapEventPlugin` (which is stubbed to a noop function on server). 
 
+### Minimal top-most component
+
+```jsx
+/**
+* @jsx React.DOM
+*/
+
+/*  global React, ReactMeteor, Session, Meteor, mui, injectTapEventPlugin */
+
+injectTapEventPlugin();
+
+var ThemeManager = mui.Styles.ThemeManager();
+
+var App = ReactMeteor.createClass({
+    templateName: 'App',
+    getMeteorState: function() {
+        return {
+        };
+    },
+    getChildContext: function() {
+        return {
+            muiTheme: ThemeManager.getCurrentTheme()
+        };
+    },
+    childContextTypes: {
+        muiTheme: React.PropTypes.object
+    },
+    render: function() {
+        var contentStyle = {
+            paddingTop: ThemeManager.getCurrentTheme().component.appBar.height
+        }
+        return <mui.AppCanvas predefinedLayout={1}>
+            <mui.AppBar title="My App"></mui.AppBar>
+            <div className="app-content-canvas" style={contentStyle}>
+              /* ... */
+            </div>
+        </mui.AppCanvas>;
+    }
+});
+```
+
 ## Prerequisites
 
 We recommend that you get started with the [React Library](http://facebook.github.io/react/) before diving into material-ui for a better understanding. Should you choose to skip this, don't worry, we'll explain relevant React concepts as they come along.

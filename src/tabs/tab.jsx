@@ -7,26 +7,22 @@ var Tab = React.createClass({
   mixins: [StylePropable],
 
   contextTypes: {
-    theme: React.PropTypes.object
+    muiTheme: React.PropTypes.object
   },
 
   propTypes: {
     handleTouchTap: React.PropTypes.func,
-    selected: React.PropTypes.bool
+    selected: React.PropTypes.bool,
+    width: React.PropTypes.string
   },
 
   handleTouchTap: function(){
     this.props.handleTouchTap(this.props.tabIndex, this);
   },
 
-  getTheme: function() {
-    return this.context.theme.palette;
-  },
-
   render: function(){
     var styles = this.mergeAndPrefix({
       'display': 'table-cell',
-      'height': '100%',
       'cursor': 'pointer',
       'textAlign': 'center',
       'verticalAlign': 'middle',
@@ -36,7 +32,8 @@ var Tab = React.createClass({
       'fontSize': '14sp',
       'fontWeight': '500',
       'whiteSpace': 'initial',
-      'font': this.getTheme().fontFamily,
+      'fontFamily': this.context.muiTheme.contentFontFamily,
+      'boxSizing': 'border-box',
       'width': this.props.width
     }, this.props.style);
 
