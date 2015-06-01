@@ -14,9 +14,9 @@ The `meteor-bundle.js` file must be rebuild manually and comitted before pushing
 
 To use this package, you MUST also add the **reactjs:react** package to your app. This package has a weak dependency on it so it is loaded first, but does not depends on a particular version of it.
 
-**WARNING** This package rely on a modified version of the **reactjs:react** that properly export the React object on the client. See https://github.com/reactjs/react-meteor/pull/74.
+You need to use **reactjs:react** version **0.2.4** and higher.
 
-This meteor package exports `mui` and `injectTapEventPlugin`.
+This meteor package exports `mui` and `injectTapEventPlugin` (which is stubbed to a noop function on server). 
 
 ## Prerequisites
 

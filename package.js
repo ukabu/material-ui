@@ -1,6 +1,6 @@
 Package.describe({
     name: "ukabu:material-ui",
-    version: "0.8.0-alpha",
+    version: "0.8.0-beta",
     summary: "material-ui for Meteor apps",
     git: "https://github.com/ukabu/material-ui.git",
     documentation: "README.md"
@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom("0.9.0");
-    api.use("reactjs:react");
+    api.use("reactjs:react@0.2.4", {weak:true});
     api.addFiles('meteor/react.js');
     api.addFiles('meteor-bundle.js');
     api.addFiles('meteor-tap-event-plugin.js', 'client');
